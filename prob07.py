@@ -3,4 +3,12 @@
 
 import sys
 
+l = [50000, 10000, 5000, 1000, 500, 100, 50, 10, 5, 1]
+
 money = input('수를 입력하세요: ')
+
+for i in range(len(l)):
+    print(str(l[i]) + '원 : ' + str((int(money) // l[i])) + '개')
+    money = str(int(money) % l[i])
+
+sys.exit(0)

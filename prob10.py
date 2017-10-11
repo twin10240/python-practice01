@@ -11,5 +11,7 @@ elif menu == '만두':
 else:
     price = 0
 
-print('가격: {0}'.format(price))
+f = 'menu: %(menu)s, price: %(price)d'
+print(f % {'menu': menu, 'price': price})
 
+# print('가격: {0}'.format(price))

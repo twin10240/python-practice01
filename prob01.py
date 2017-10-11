@@ -4,4 +4,12 @@ import sys
 
 number = input('수를 입력하세요: ')
 
+if number.isdigit() is False:
+    print('정수가 아닙니다.')
+else:
+    if int(number) % 3 == 0:
+        print('3의 배수입니다.')
+    else:
+        print('3의 배수가 아닙니다.')
+
 sys.exit(0)
